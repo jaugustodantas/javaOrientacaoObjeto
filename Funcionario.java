@@ -3,15 +3,15 @@ public class Funcionario {
     private String nome;
     private String cpf;
     private double salario;
-    private int tipo; 
+    private int tipo; // 0= funcionario padrão, 1 = gerente, 2 = diretor
 
     //inicio construtores
-    public Funcionario(String nome, String cpf,double salario,int tipo){
-        this.nome = nome;
-        this.cpf = cpf;
-        this.salario = salario;
-        this.tipo = tipo;
-    }
+//   public Funcionario(String nome, String cpf,double salario,int tipo){
+//       this.nome = nome;
+//       this.cpf = cpf;
+//        this.salario = salario;
+//         this.tipo = tipo;
+//     }
 
     //fim construtores
 
@@ -47,13 +47,7 @@ public class Funcionario {
 
     //metodos
     public double bonificacao(){
-        if(this.tipo == 0){
             return this.salario *0.1;
-        }else if (this.tipo ==1){
-            return this.salario;
-        }else{
-            return this.salario + 1000;
-        }
     }
 
     //fim metodos
